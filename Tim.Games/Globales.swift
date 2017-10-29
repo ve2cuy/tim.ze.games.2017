@@ -43,48 +43,5 @@ struct Globales {
 class ImageViaURL {
     static func yo() {print("yo")}
 
-    /// **********************************************
-    static func obtenirImageBloquante(urlStr:String) -> UIImage?{
-        let URLFichierImage = "\(Globales.URLDonnées)\(urlStr)"
-        
-        if let _url = URL(string: URLFichierImage) {
-            do {
-                let _data = try Data(contentsOf: _url, options: Data.ReadingOptions.alwaysMapped)
-                return UIImage(data: _data)
-            }
-            catch  {
-                print("Ligne \(#line), \(error), ### Exeption: Problème avec URL: \(URLFichierImage)")
-            }
-        } // if let _url
-        return UIImage(named:Globales.NA_IMAGE)
-    } // obtenirImageBloquante
-    
-    /// **********************************************
-    static func obtenirImage(urlStr:String, uneimage: UIImageView){
-        // Préparer et lancer la requête
-        let request = URLRequest(url: URL(string:urlStr )! /*as! URL*/)
-        let session = URLSession.shared
-        
-        let task = session.dataTask(with: request,
-                                    completionHandler: {data, response, error -> Void in
-                                        
-                                        if (error == nil) {
-                                            DispatchQueue.main.async ( execute:
-                                                {
-                                                    if let _data = data {
-                                                        uneimage.image = UIImage(data: _data)
-                                                    } else
-                                                    {
-                                                        uneimage.image = UIImage(named: Globales.NA_IMAGE)
-                                                    }
-                                                }
-                                            )  // DispatchQueue.main.async()
-                                            
-                                        } else { // erreur d'URL
-                                            uneimage.image = UIImage(named: Globales.NA_IMAGE)
-                                        }
-        })
-        task.resume()  // Reprendre le traitement de la session pour qu'elle puisse se terminer.
-    } // obtenirImage
     
 } // class ImageViaURL 
