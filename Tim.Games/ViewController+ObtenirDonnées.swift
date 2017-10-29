@@ -56,20 +56,26 @@ extension ViewController {
     
     // ================================================================
     // obtenirDonnéesVersionNonBloquante
-    func  obtenirDonnées(uneURL:String, données:APITim?) {
-        print("Exécution de obtenirDonnéesVersionBloquante() avec \(uneURL)")
-        if let _data = NSData(contentsOf: URL(string: uneURL)!) as Data? {
-            // Note: YahooFinance veut dire "de type YahooFinance"
-            let données = try! JSONDecoder().decode(type(of: données), from: _data)
-            #if DEBUG
-                // print(données)
-                if let _données = données {
-                    for jeu in _données.resultats {
-                        let pochette = jeu.pochettes.couverture ?? "Pas de pochette"
-                        print(jeu.titre, jeu.annee, pochette)
+    func  obtenirDonnées(unFiltre:String, données:APITim?) {
+        print("Exécution de obtenirDonnées avec \(unFiltre)")
+        
+        let strURL = "http://prof-tim.cstj.qc.ca/cours/xcode/sources/timgames/api.timgames.php?apikey=\(Globales.CLE_API)&q=\(unFiltre)&format=json&quant=\(tailleRequete.text!)"
+        
+        // Rouler en parallèle
+        DispatchQueue.main.async {
+            if let _data = NSData(contentsOf: URL(string: strURL)!) as Data? {
+                // Note: YahooFinance veut dire "de type YahooFinance"
+                let données = try! JSONDecoder().decode(type(of: données), from: _data)
+                #if DEBUG
+                    // print(données)
+                    if let _données = données {
+                        for jeu in _données.resultats {
+                            let pochette = jeu.pochettes.couverture ?? "Pas de pochette"
+                            print(jeu.titre, jeu.annee, pochette)
+                        }
                     }
-                }
-            #endif
-        } // if let
-    } // obtenirDonnéesVersionBloquante
+                #endif
+            } // if let
+        }
+    } // obtenirDonnées
 } // extenxion

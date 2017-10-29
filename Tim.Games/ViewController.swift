@@ -57,8 +57,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         // TODO: 1 - Obtenir les données initiales de l'API web
-        /// obtenirDonnées("")
-        obtenirDonnéesVersionBloquante(unFiltre:"rts", données: donnéesAPITim)
+        /// obtenirDonnéesVersionBloquante(unFiltre:"rts", données: donnéesAPITim)
+        obtenirDonnées(unFiltre:"rts", données: donnéesAPITim)
+
     } // viewDidLoad()
 
     /// =====================================================================
