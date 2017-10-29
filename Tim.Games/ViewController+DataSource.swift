@@ -32,17 +32,38 @@ import UIKit
 
 extension ViewController: UICollectionViewDataSource {
     // MARK:- Méthodes de UICollectionViewDataSource
+    // =========================================================================
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // TODO:  4 - Retourner le nombre d'items reçus suite à la requête de l'API
-        return 10  // À effacer!!!
-    }
+        guard let nbItems = donnéesAPITim?.resultats.count else { return 1  }
+        return nbItems
+    } // numberOfItemsInSection
     
+    // =========================================================================
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cellule = collectionView.dequeueReusableCell(withReuseIdentifier: "modeleCellule1", for: indexPath) as! CollectionViewCellPerso1
-        cellule.pochetteTitre.text = "jeu no \(indexPath.row)"
-        // cellule.contentView.tag = indexPath.row
+        let indice = indexPath.row
+        cellule.contentView.tag = indice  // À utiliser dans le prepare for segue
         
+        // TODO: 5 - Préparer les données de la cellule courante: titre, image, ...
+        let nomJeu = donnéesAPITim?.resultats[indice].titre ?? "Titre non disponible"
+        let nomFichierCouverture = donnéesAPITim?.resultats[indice].pochettes.grande ?? Globales.NA_IMAGE
+        let URLFichierImage = "\(Globales.URLDonnées)\(nomFichierCouverture)"
+        print(URLFichierImage)
+
         // TODO: 5a - Renseigner les éléments d'interface de la cellule courante: titre, image, ...
+        cellule.pochetteTitre.text = nomJeu
+        // Obtenir l'image via le Web
+        if let _url = URL(string: URLFichierImage) {
+            do {
+                let _data = try Data(contentsOf: _url)
+                cellule.pochetteImage.image = UIImage(data: _data)
+            }
+            catch  {
+                print("Ligne \(#line), \(error), ### Exception: Problème avec URL: \(URLFichierImage)")
+                cellule.pochetteImage.image = UIImage(named:Globales.NA_IMAGE)
+            }
+        } // if let _url
         
         // TODO: 5b - Renseigner les éléments d'interface en version non bloquante
         

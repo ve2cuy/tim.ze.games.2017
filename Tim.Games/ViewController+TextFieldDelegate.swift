@@ -53,8 +53,8 @@ extension ViewController: UITextFieldDelegate {
         print("escapedText = \(escapedText)")
         
         // TODO: Relancer la requete vers l'API
-        obtenirDonnéesVersionBloquante(unFiltre: escapedText, données: donnéesAPITim)
-        
+        obtenirDonnéesVersionBloquante(unFiltre: escapedText, données: &donnéesAPITim)
+        collectionDesItems.reloadData()
         //----------------------------------
         textField.resignFirstResponder()
         progression.stopAnimating()

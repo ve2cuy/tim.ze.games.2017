@@ -33,19 +33,20 @@ import Foundation
 extension ViewController {
     
     // ================================================================
-    func  obtenirDonnéesVersionBloquante(unFiltre:String, données:APITim?) {
+    func  obtenirDonnéesVersionBloquante(unFiltre:String, données:inout APITim?) {
+        // Note: inout = réception du paramètre en lecture/écriture
         print("Exécution de obtenirDonnéesVersionBloquante() avec \(unFiltre)")
 
         let strURL = "http://prof-tim.cstj.qc.ca/cours/xcode/sources/timgames/api.timgames.php?apikey=\(Globales.CLE_API)&q=\(unFiltre)&format=json&quant=\(tailleRequete.text!)"
 
         if let _data = NSData(contentsOf: URL(string: strURL)!) as Data? {
             // Note: YahooFinance veut dire "de type YahooFinance"
-            let données = try! JSONDecoder().decode(type(of: données), from: _data)
+            données = try! JSONDecoder().decode(type(of: données), from: _data)
             #if DEBUG
                 // print(données)
                 if let _données = données {
                     for jeu in _données.resultats {
-                        let pochette = jeu.pochettes.couverture ?? "Pas de pochette"
+                        let pochette = jeu.pochettes.grande ?? "Pas de pochette"
                         print(jeu.titre, jeu.annee, pochette)
                     }
                 }
@@ -56,11 +57,11 @@ extension ViewController {
     
     // ================================================================
     // obtenirDonnéesVersionNonBloquante
-    func  obtenirDonnées(uneURL:String, données:APITim?) {
+    func  obtenirDonnées(uneURL:String, données:inout APITim? ) {
         print("Exécution de obtenirDonnéesVersionBloquante() avec \(uneURL)")
         if let _data = NSData(contentsOf: URL(string: uneURL)!) as Data? {
             // Note: YahooFinance veut dire "de type YahooFinance"
-            let données = try! JSONDecoder().decode(type(of: données), from: _data)
+            données = try! JSONDecoder().decode(type(of: données), from: _data)
             #if DEBUG
                 // print(données)
                 if let _données = données {

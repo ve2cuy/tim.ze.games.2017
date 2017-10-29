@@ -55,10 +55,9 @@ class ViewController: UIViewController {
     /// =====================================================================
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // TODO: 1 - Obtenir les données initiales de l'API web
         /// obtenirDonnées("")
-        obtenirDonnéesVersionBloquante(unFiltre:"rts", données: donnéesAPITim)
+        obtenirDonnéesVersionBloquante(unFiltre:"rts", données: &donnéesAPITim)  // & = passer l'adresse de l'Objet
     } // viewDidLoad()
 
     /// =====================================================================

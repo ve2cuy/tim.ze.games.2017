@@ -26,7 +26,7 @@
 import Foundation
 
 // ==============================================
-struct APITim: Codable {
+class APITim: Codable {
     
     var information:Info
     var resultats:Array<Resultat>
