@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B50BD9301DB843270095C62B /* 1-star-rating.png in Resources */ = {isa = PBXBuildFile; fileRef = B50BD92B1DB843270095C62B /* 1-star-rating.png */; };
+		B50BD9311DB843270095C62B /* 2-star-rating.png in Resources */ = {isa = PBXBuildFile; fileRef = B50BD92C1DB843270095C62B /* 2-star-rating.png */; };
+		B50BD9321DB843270095C62B /* 3-star-rating.png in Resources */ = {isa = PBXBuildFile; fileRef = B50BD92D1DB843270095C62B /* 3-star-rating.png */; };
+		B50BD9331DB843270095C62B /* 4-star-rating.png in Resources */ = {isa = PBXBuildFile; fileRef = B50BD92E1DB843270095C62B /* 4-star-rating.png */; };
+		B50BD9341DB843270095C62B /* 5-star-rating.png in Resources */ = {isa = PBXBuildFile; fileRef = B50BD92F1DB843270095C62B /* 5-star-rating.png */; };
+		B525313E1DB79CAB009F1FCB /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = B525313D1DB79CAB009F1FCB /* Intro.swift */; };
+		B52531401DB7AE43009F1FCB /* avatar-11.png in Resources */ = {isa = PBXBuildFile; fileRef = B525313F1DB7AE43009F1FCB /* avatar-11.png */; };
+		B52531421DB7AEB7009F1FCB /* CelluleAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52531411DB7AEB7009F1FCB /* CelluleAvatar.swift */; };
+		B52B68591DB6A99B003B2AF1 /* Structure json de API timgames.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B52B68581DB6A99B003B2AF1 /* Structure json de API timgames.rtf */; };
+		B52B685B1DB6C356003B2AF1 /* api.timgame.php in Resources */ = {isa = PBXBuildFile; fileRef = B52B685A1DB6C356003B2AF1 /* api.timgame.php */; };
+		B5762C631FA5FD7B004F5C78 /* APITim.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5762C621FA5FD7B004F5C78 /* APITim.swift */; };
+		B5762C651FA6010B004F5C78 /* ViewController+ObtenirDonnées.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5762C641FA6010B004F5C78 /* ViewController+ObtenirDonnées.swift */; };
+		B5762C671FA60BBC004F5C78 /* ViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5762C661FA60BBC004F5C78 /* ViewController+DataSource.swift */; };
+		B5762C6A1FA60C77004F5C78 /* ViewController+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5762C691FA60C77004F5C78 /* ViewController+TextFieldDelegate.swift */; };
+		B598859C1DBA9A6A00F3D104 /* String+parseJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598859B1DBA9A6A00F3D104 /* String+parseJSON.swift */; };
+		B598859E1DBAB29C00F3D104 /* DetailsSuiveux.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598859D1DBAB29C00F3D104 /* DetailsSuiveux.swift */; };
+		B59885A01DBB999000F3D104 /* p-20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B598859F1DBB999000F3D104 /* p-20.jpg */; };
+		B59885A21DBBFFF300F3D104 /* Globales.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59885A11DBBFFF300F3D104 /* Globales.swift */; };
+		B59885A41DBC0DD700F3D104 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B59885A31DBC0DD700F3D104 /* music.mp3 */; };
+		B59885A61DBD250900F3D104 /* sonOuverture.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B59885A51DBD250900F3D104 /* sonOuverture.mp3 */; };
+		B59885A81DBD28D300F3D104 /* segueSurMesure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59885A71DBD28D300F3D104 /* segueSurMesure.swift */; };
+		B59C4F8E1D9B40E100293D72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C4F8D1D9B40E100293D72 /* AppDelegate.swift */; };
+		B59C4F901D9B40E100293D72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C4F8F1D9B40E100293D72 /* ViewController.swift */; };
+		B59C4F931D9B40E100293D72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59C4F911D9B40E100293D72 /* Main.storyboard */; };
+		B59C4F951D9B40E100293D72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B59C4F941D9B40E100293D72 /* Assets.xcassets */; };
+		B59C4F981D9B40E100293D72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59C4F961D9B40E100293D72 /* LaunchScreen.storyboard */; };
+		B59C4FC31D9B443A00293D72 /* CollectionViewCellPerso1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C4FC21D9B443A00293D72 /* CollectionViewCellPerso1.swift */; };
+		B59C50391D9B56A300293D72 /* Chameleon-1.png in Resources */ = {isa = PBXBuildFile; fileRef = B59C50381D9B56A300293D72 /* Chameleon-1.png */; };
+		B59C503B1D9B676600293D72 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = B59C503A1D9B676600293D72 /* loading.gif */; };
+		B59C503D1D9B7D5B00293D72 /* 20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B59C503C1D9B7D5B00293D72 /* 20.jpg */; };
+		B59C50401D9B836700293D72 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = B59C503E1D9B836700293D72 /* facebook.png */; };
+		B59C50411D9B836700293D72 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = B59C503F1D9B836700293D72 /* twitter.png */; };
+		B59C50431D9B867F00293D72 /* ViewControllerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C50421D9B867F00293D72 /* ViewControllerDetails.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B50BD92B1DB843270095C62B /* 1-star-rating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-star-rating.png"; sourceTree = "<group>"; };
+		B50BD92C1DB843270095C62B /* 2-star-rating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-star-rating.png"; sourceTree = "<group>"; };
+		B50BD92D1DB843270095C62B /* 3-star-rating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3-star-rating.png"; sourceTree = "<group>"; };
+		B50BD92E1DB843270095C62B /* 4-star-rating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4-star-rating.png"; sourceTree = "<group>"; };
+		B50BD92F1DB843270095C62B /* 5-star-rating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5-star-rating.png"; sourceTree = "<group>"; };
+		B525313D1DB79CAB009F1FCB /* Intro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
+		B525313F1DB7AE43009F1FCB /* avatar-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar-11.png"; sourceTree = "<group>"; };
+		B52531411DB7AEB7009F1FCB /* CelluleAvatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CelluleAvatar.swift; sourceTree = "<group>"; };
+		B52B68581DB6A99B003B2AF1 /* Structure json de API timgames.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "Structure json de API timgames.rtf"; sourceTree = "<group>"; };
+		B52B685A1DB6C356003B2AF1 /* api.timgame.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = api.timgame.php; sourceTree = "<group>"; };
+		B5762C621FA5FD7B004F5C78 /* APITim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITim.swift; sourceTree = "<group>"; };
+		B5762C641FA6010B004F5C78 /* ViewController+ObtenirDonnées.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ObtenirDonnées.swift"; sourceTree = "<group>"; };
+		B5762C661FA60BBC004F5C78 /* ViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+DataSource.swift"; sourceTree = "<group>"; };
+		B5762C691FA60C77004F5C78 /* ViewController+TextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+TextFieldDelegate.swift"; sourceTree = "<group>"; };
+		B598859B1DBA9A6A00F3D104 /* String+parseJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+parseJSON.swift"; sourceTree = "<group>"; };
+		B598859D1DBAB29C00F3D104 /* DetailsSuiveux.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsSuiveux.swift; sourceTree = "<group>"; };
+		B598859F1DBB999000F3D104 /* p-20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "p-20.jpg"; sourceTree = "<group>"; };
+		B59885A11DBBFFF300F3D104 /* Globales.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globales.swift; sourceTree = "<group>"; };
+		B59885A31DBC0DD700F3D104 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		B59885A51DBD250900F3D104 /* sonOuverture.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sonOuverture.mp3; sourceTree = "<group>"; };
+		B59885A71DBD28D300F3D104 /* segueSurMesure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = segueSurMesure.swift; sourceTree = "<group>"; };
+		B59C4F8A1D9B40E100293D72 /* Tim.Games-depart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tim.Games-depart.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B59C4F8D1D9B40E100293D72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B59C4F8F1D9B40E100293D72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B59C4F921D9B40E100293D72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B59C4F941D9B40E100293D72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B59C4F971D9B40E100293D72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B59C4F991D9B40E100293D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B59C4FC21D9B443A00293D72 /* CollectionViewCellPerso1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellPerso1.swift; sourceTree = "<group>"; };
+		B59C50381D9B56A300293D72 /* Chameleon-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chameleon-1.png"; sourceTree = "<group>"; };
+		B59C503A1D9B676600293D72 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		B59C503C1D9B7D5B00293D72 /* 20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 20.jpg; sourceTree = "<group>"; };
+		B59C503E1D9B836700293D72 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		B59C503F1D9B836700293D72 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		B59C50421D9B867F00293D72 /* ViewControllerDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDetails.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B59C4F871D9B40E100293D72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B50BD92A1DB843270095C62B /* cotes */ = {
+			isa = PBXGroup;
+			children = (
+				B50BD92B1DB843270095C62B /* 1-star-rating.png */,
+				B50BD92C1DB843270095C62B /* 2-star-rating.png */,
+				B50BD92D1DB843270095C62B /* 3-star-rating.png */,
+				B50BD92E1DB843270095C62B /* 4-star-rating.png */,
+				B50BD92F1DB843270095C62B /* 5-star-rating.png */,
+			);
+			path = cotes;
+			sourceTree = "<group>";
+		};
+		B5762C611FA5FD52004F5C78 /* Codables */ = {
+			isa = PBXGroup;
+			children = (
+				B5762C621FA5FD7B004F5C78 /* APITim.swift */,
+			);
+			name = Codables;
+			sourceTree = "<group>";
+		};
+		B5762C681FA60C30004F5C78 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B59C4F8F1D9B40E100293D72 /* ViewController.swift */,
+				B5762C641FA6010B004F5C78 /* ViewController+ObtenirDonnées.swift */,
+				B5762C661FA60BBC004F5C78 /* ViewController+DataSource.swift */,
+				B5762C691FA60C77004F5C78 /* ViewController+TextFieldDelegate.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		B59C4F811D9B40E000293D72 = {
+			isa = PBXGroup;
+			children = (
+				B59C4F8C1D9B40E100293D72 /* Tim.Games */,
+				B59C4F8B1D9B40E100293D72 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B59C4F8B1D9B40E100293D72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B59C4F8A1D9B40E100293D72 /* Tim.Games-depart.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B59C4F8C1D9B40E100293D72 /* Tim.Games */ = {
+			isa = PBXGroup;
+			children = (
+				B59C4F9F1D9B425B00293D72 /* Les ressources */,
+				B59C4F911D9B40E100293D72 /* Main.storyboard */,
+				B59C4F941D9B40E100293D72 /* Assets.xcassets */,
+				B59C4F961D9B40E100293D72 /* LaunchScreen.storyboard */,
+				B59C4F991D9B40E100293D72 /* Info.plist */,
+			);
+			path = Tim.Games;
+			sourceTree = "<group>";
+		};
+		B59C4F9F1D9B425B00293D72 /* Les ressources */ = {
+			isa = PBXGroup;
+			children = (
+				B59C4FC11D9B43F400293D72 /* Les classes */,
+				B59C4FA01D9B426700293D72 /* Images */,
+				B52B68581DB6A99B003B2AF1 /* Structure json de API timgames.rtf */,
+				B52B685A1DB6C356003B2AF1 /* api.timgame.php */,
+			);
+			name = "Les ressources";
+			sourceTree = "<group>";
+		};
+		B59C4FA01D9B426700293D72 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B59885A51DBD250900F3D104 /* sonOuverture.mp3 */,
+				B59885A31DBC0DD700F3D104 /* music.mp3 */,
+				B50BD92A1DB843270095C62B /* cotes */,
+				B525313F1DB7AE43009F1FCB /* avatar-11.png */,
+				B59C503E1D9B836700293D72 /* facebook.png */,
+				B59C503F1D9B836700293D72 /* twitter.png */,
+				B598859F1DBB999000F3D104 /* p-20.jpg */,
+				B59C503C1D9B7D5B00293D72 /* 20.jpg */,
+				B59C503A1D9B676600293D72 /* loading.gif */,
+				B59C50381D9B56A300293D72 /* Chameleon-1.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		B59C4FC11D9B43F400293D72 /* Les classes */ = {
+			isa = PBXGroup;
+			children = (
+				B5762C681FA60C30004F5C78 /* ViewController */,
+				B5762C611FA5FD52004F5C78 /* Codables */,
+				B59C4F8D1D9B40E100293D72 /* AppDelegate.swift */,
+				B59C4FC21D9B443A00293D72 /* CollectionViewCellPerso1.swift */,
+				B59C50421D9B867F00293D72 /* ViewControllerDetails.swift */,
+				B525313D1DB79CAB009F1FCB /* Intro.swift */,
+				B52531411DB7AEB7009F1FCB /* CelluleAvatar.swift */,
+				B598859B1DBA9A6A00F3D104 /* String+parseJSON.swift */,
+				B598859D1DBAB29C00F3D104 /* DetailsSuiveux.swift */,
+				B59885A11DBBFFF300F3D104 /* Globales.swift */,
+				B59885A71DBD28D300F3D104 /* segueSurMesure.swift */,
+			);
+			name = "Les classes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B59C4F891D9B40E100293D72 /* Tim.Games-depart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B59C4F9C1D9B40E100293D72 /* Build configuration list for PBXNativeTarget "Tim.Games-depart" */;
+			buildPhases = (
+				B59C4F861D9B40E100293D72 /* Sources */,
+				B59C4F871D9B40E100293D72 /* Frameworks */,
+				B59C4F881D9B40E100293D72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tim.Games-depart";
+			productName = Tim.Games;
+			productReference = B59C4F8A1D9B40E100293D72 /* Tim.Games-depart.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B59C4F821D9B40E000293D72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Production sur support";
+				TargetAttributes = {
+					B59C4F891D9B40E100293D72 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 842QT9U36M;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B59C4F851D9B40E000293D72 /* Build configuration list for PBXProject "Tim.Games-depart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B59C4F811D9B40E000293D72;
+			productRefGroup = B59C4F8B1D9B40E100293D72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B59C4F891D9B40E100293D72 /* Tim.Games-depart */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B59C4F881D9B40E100293D72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B59C50391D9B56A300293D72 /* Chameleon-1.png in Resources */,
+				B59C4F981D9B40E100293D72 /* LaunchScreen.storyboard in Resources */,
+				B59885A41DBC0DD700F3D104 /* music.mp3 in Resources */,
+				B50BD9341DB843270095C62B /* 5-star-rating.png in Resources */,
+				B50BD9301DB843270095C62B /* 1-star-rating.png in Resources */,
+				B59C50401D9B836700293D72 /* facebook.png in Resources */,
+				B59885A01DBB999000F3D104 /* p-20.jpg in Resources */,
+				B50BD9311DB843270095C62B /* 2-star-rating.png in Resources */,
+				B52B68591DB6A99B003B2AF1 /* Structure json de API timgames.rtf in Resources */,
+				B59C503B1D9B676600293D72 /* loading.gif in Resources */,
+				B59C4F951D9B40E100293D72 /* Assets.xcassets in Resources */,
+				B50BD9321DB843270095C62B /* 3-star-rating.png in Resources */,
+				B59C50411D9B836700293D72 /* twitter.png in Resources */,
+				B59C4F931D9B40E100293D72 /* Main.storyboard in Resources */,
+				B50BD9331DB843270095C62B /* 4-star-rating.png in Resources */,
+				B59C503D1D9B7D5B00293D72 /* 20.jpg in Resources */,
+				B52B685B1DB6C356003B2AF1 /* api.timgame.php in Resources */,
+				B59885A61DBD250900F3D104 /* sonOuverture.mp3 in Resources */,
+				B52531401DB7AE43009F1FCB /* avatar-11.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B59C4F861D9B40E100293D72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5762C631FA5FD7B004F5C78 /* APITim.swift in Sources */,
+				B598859C1DBA9A6A00F3D104 /* String+parseJSON.swift in Sources */,
+				B525313E1DB79CAB009F1FCB /* Intro.swift in Sources */,
+				B52531421DB7AEB7009F1FCB /* CelluleAvatar.swift in Sources */,
+				B59C4FC31D9B443A00293D72 /* CollectionViewCellPerso1.swift in Sources */,
+				B5762C651FA6010B004F5C78 /* ViewController+ObtenirDonnées.swift in Sources */,
+				B59C4F901D9B40E100293D72 /* ViewController.swift in Sources */,
+				B5762C671FA60BBC004F5C78 /* ViewController+DataSource.swift in Sources */,
+				B59C4F8E1D9B40E100293D72 /* AppDelegate.swift in Sources */,
+				B598859E1DBAB29C00F3D104 /* DetailsSuiveux.swift in Sources */,
+				B59885A81DBD28D300F3D104 /* segueSurMesure.swift in Sources */,
+				B59C50431D9B867F00293D72 /* ViewControllerDetails.swift in Sources */,
+				B59885A21DBBFFF300F3D104 /* Globales.swift in Sources */,
+				B5762C6A1FA60C77004F5C78 /* ViewController+TextFieldDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B59C4F911D9B40E100293D72 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B59C4F921D9B40E100293D72 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B59C4F961D9B40E100293D72 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B59C4F971D9B40E100293D72 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B59C4F9A1D9B40E100293D72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		B59C4F9B1D9B40E100293D72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B59C4F9D1D9B40E100293D72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 842QT9U36M;
+				INFOPLIST_FILE = Tim.Games/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Intro-a--Xcode.Tim-Games";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B59C4F9E1D9B40E100293D72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 842QT9U36M;
+				INFOPLIST_FILE = Tim.Games/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Intro-a--Xcode.Tim-Games";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B59C4F851D9B40E000293D72 /* Build configuration list for PBXProject "Tim.Games-depart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B59C4F9A1D9B40E100293D72 /* Debug */,
+				B59C4F9B1D9B40E100293D72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B59C4F9C1D9B40E100293D72 /* Build configuration list for PBXNativeTarget "Tim.Games-depart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B59C4F9D1D9B40E100293D72 /* Debug */,
+				B59C4F9E1D9B40E100293D72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B59C4F821D9B40E000293D72 /* Project object */;
+}

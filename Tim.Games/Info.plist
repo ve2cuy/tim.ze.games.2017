@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>UILaunchStoryboardName</key>
+	<string>Main</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>droit auteur</key>
+	<string>//  ============================================================================================
+//  À l'usage exclusif des étudiants et étudiantes de
+//  Techniques d'Intégration Multimédia
+//  du cégep de Saint-Jérôme.
+//  --------------------------------------------------------------------------------------------
+//  Il est interdit de reproduire, en tout ou en partie, à des fins commerciales,
+//  le code source, les scènes, les éléments graphiques, les classes et
+//  tout autre contenu du présent projet sans l’autorisation écrite de l'auteur.
+//
+//  Pour obtenir l’autorisation de reproduire ou d’utiliser, en tout ou en partie,
+//  le présent projet, veuillez communiquer avec:
+//
+//  Alain Boudreault, aboudrea@cstj.qc.ca, ve2cuy.wordpress.com
+//
+//  ============================================================================================
+//  Version de départ - disponible à https://bitbucket.org/alain_boudreault/tim.ze.games-depart
+</string>
+</dict>
+</plist>

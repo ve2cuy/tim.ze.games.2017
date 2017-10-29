@@ -1,0 +1,136 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf600
+{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fmodern\fcharset0 Courier-Bold;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red29\green133\blue25;\red180\green0\blue98;
+\red68\green137\blue147;\red46\green13\blue110;\red186\green0\blue17;\red92\green38\blue153;}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c0\c0\c0;\csgenericrgb\c11489\c52197\c9852;\csgenericrgb\c70682\c0\c38264;
+\csgenericrgb\c26518\c53646\c57619;\csgenericrgb\c18100\c5200\c43100;\csgenericrgb\c72768\c0\c6662;\csgenericrgb\c35900\c14900\c60100;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 \{ \outl\strokewidth60  <-- Dictionary avec deux cl\'e9s: "info:Dictionary<String, Any>" et "resultats:Array<Dictionary<String, Any>>"\outl0\strokewidth0 \
+    "
+\f1\b info
+\f0\b0 ": \{\
+        "api.TIMGames": "version 2016.10.01",\
+        "Auteur_API": "Alain Boudreault, AKA Puyansude, AKA ve2cuy",\
+        "type_requete": "json",\
+        "recherche": "",\
+        "apikey": "ceciEstUltraSecret",\
+        "droit_auteur": "Cette API est \\u00e0 l'usage exclusif des \\u00e9tudiantes et \\u00e9tudiants de 'Production Multim\\u00e9dia sur Support' de tim.cstj.qc.ca'",\
+        "site_web": "http:\\/\\/prof-tim.cstj.qc.ca\\/cours\\/xcode\\/wp\\/index.php\\/contenu\\/",\
+        "nombre": "2",\
+        "adresse_IP": "192.226.187.50",\
+        "date": \{\
+            "seconds": 30,\
+            "minutes": 9,\
+            "hours": 14,\
+            "mday": 23,\
+            "wday": 0,\
+            "mon": 10,\
+            "year": 2016,\
+            "yday": 296,\
+            "weekday": "Sunday",\
+            "month": "October",\
+            "0": 1477246170\
+        \}\
+    \},\
+    "
+\f1\b resultats
+\f0\b0 ": [  \outl\strokewidth60 <--  listeJeux = donn\'e9es["resultats] as? Array<Dictionary<String, Any>>\outl0\strokewidth0 \
+\
+        \{ \outl\strokewidth60 \strokec0 // <-- premier jeu\outl0\strokewidth0 \
+            "titre": " the Abxvxlbjqqmipu",\
+            "editeur": "TIMGames",\
+            "annee": 1983,\
+            "rang_semaine": 78,\
+            "
+\f1\b pochettes
+\f0\b0 ": \{ \outl\strokewidth60  <-- jaquettesPremierJeu = listeJEUX[0]["pochettes"] as? Dictionary<String, String> \outl0\strokewidth0 \
+                "petite": "small-16.jpg",\
+                "grande": "16.jpg",  <-- imageGrandeJaquette = \outl\strokewidth60 jaquettesPremierJeu["grande"]\outl0\strokewidth0 \
+                "couverture": "petite\\/p-16.jpg"\
+            \},\
+            "description": "Il fit de la sorte un assez long chemin...",\
+            "like_facebook": 4235,\
+            "like_twitter": 6068,\
+            "cotes": \{  \outl\strokewidth60 <-- cotesDuDeuxi\'e8meJeu =  listeJEUX[1]["cotes"] as? Dictionary<String, Int> \outl0\strokewidth0 \
+                "critiques": 4,  \
+                "joueurs": 4  \outl\strokewidth60 <-- critiqueJoueurs = cotesDuDeuxi\'e8meJeu["joueur"]!\outl0\strokewidth0 \
+            \},\
+            "
+\f1\b suiveux
+\f0\b0 ": [  \outl\strokewidth60 <-- listeDesSuiveuxDuDernierJeu =  listeJEUX.last["suiveux"] as? Array<Dictionaty<String, String>>\outl0\strokewidth0 \
+                \{\
+                    "nom": "Pramoqla", \outl\strokewidth60 <-- nomPremierSuiveux = listeDesSuiveuxDuDernierJeu[0]["nom"]!\outl0\strokewidth0 \
+                    "avatar": "avatar-36.png",\
+                    "description": "Les larmes qui coulent sont am\\u00e8res mais plus am\\u00e8res encore sont celles qui ne coulent pas."\
+                \},\
+                \{\
+                    "nom": "Vvxiftyrc",\
+                    "avatar": "avatar-2.png",\
+                    "description": "Quand on suit quelqu'un de bon, on apprend \\u00e0 devenir bon ; quand on suit un tigre, on apprend \\u00e0 mordre."\
+                \},\
+                \{\
+                    "nom": " uavrmybcp",\
+                    "avatar": "avatar-6.png",\
+                    "description": "Les larmes qui coulent sont am\\u00e8res mais plus am\\u00e8res encore sont celles qui ne coulent pas."\
+                \},\
+                \{\
+                    "nom": "Pmejcwkqk",\
+                    "avatar": "avatar-25.png",\
+                    "description": "Mieux vaut vivre un jour comme un lion que cent ans comme un mouton."\
+                \}\
+            ]\
+        \},\
+\outl\strokewidth60 			\
+\outl0\strokewidth0         \{ \outl\strokewidth60 // <-- Deuxi\'e8me jeu\outl0\strokewidth0 \
+            "titre": " the Abmxykgeeewher",\
+            "editeur": "TIMGames",\
+            "annee": 2007,\
+            "rang_semaine": 66,\
+            "pochettes": \{\
+                "petite": "small-24.jpg",\
+                "grande": "24.jpg",\
+                "couverture": "petite\\/p-24.jpg"\
+            \},\
+            "description": "Il fit de la sorte un assez long chemin...",\
+            "like_facebook": 7259,\
+            "like_twitter": 2946,\
+            "cotes": \{\
+                "critiques": 3,\
+                "joueurs": 4\
+            \},\
+            "suiveux": [\
+                \{\
+                    "nom": "Jaiwzk oan",\
+                    "avatar": "avatar-28.png",\
+                    "description": "J'\\u00e9tais furieux de n'avoir pas de souliers ; alors j'ai rencontr\\u00e9 un homme qui n'avait pas de pieds, et je me suis trouv\\u00e9 content de mon sort."\
+                \},\
+                \{\
+                    "nom": "Ukqrwgc",\
+                    "avatar": "avatar-43.png",\
+                    "description": "Si vous voulez savoir la v\\u00e9rit\\u00e9, \\u00e9coutez les fous."\
+                \}\
+            ]\
+        \}\
+    ]\
+\}\
+\
+// *****************************************************\
+// code snippet\
+\
+\pard\tx1186\pardeftab1186\pardirnatural\partightenfactor0
+
+\f2\fs48 \cf2 \CocoaLigature0         \cf3 // Afficher le titre et le nom des suiveux\
+\cf2         \cf4 for\cf2  (indice,item) \cf4 in\cf2  \cf5 _listeDesItems\cf2 .\cf6 enumerated\cf2 () \{\
+            \cf4 if\cf2  \cf4 let\cf2  _titreItem = item[\cf7 "titre"\cf2 ] \cf4 as\cf2 ? \cf8 String\cf2  \{\
+                \cf6 print\cf2 (\cf7 "Titre item \cf2 \\\cf7 (\cf2 indice\cf7 ): \cf2 \\\cf7 (\cf2 _titreItem\cf7 )"\cf2 )\
+                \cf4 for\cf2  (indice,suiveux) \cf4 in\cf2  (item[\cf7 "suiveux"\cf2 ] \cf4 as\cf2 ? \cf8 Array\cf2 <\cf8 Dictionary\cf2 <\cf8 String\cf2 , \cf8 String\cf2 >>)!.\cf6 enumerated\cf2 () \{\
+                    \cf4 if\cf2  \cf4 let\cf2  _nom = suiveux[\cf7 "nom"\cf2 ] \{\
+                 \cf6 print\cf2 (\cf7 "\\tSuiveux \cf2 \\\cf7 (\cf2 indice\cf7 ): \cf2 \\\cf7 (\cf2 _nom\cf7 )"\cf2 )\
+                    \} \cf3 // if let _nom\
+\cf2                 \} \cf3 //   for .. in item["suiveux"]\
+\cf2             \} \cf3 // if let _titreItem\
+\cf2         \} \cf3 // for .. in _listeDesItems\
+}
