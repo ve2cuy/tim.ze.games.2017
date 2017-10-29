@@ -70,7 +70,7 @@ extension ViewController: UICollectionViewDataSource {
         // Renseigner la couleur de l'entête indexPath.row modulo 2
         let couleur1 = UIColor.init(red: 140 / 255.0, green: 188 / 255.0, blue: 220 / 255.0, alpha: 1)
         let couleur2 = UIColor.init(red: 108 / 255.0, green: 145 / 255.0, blue: 168 / 255.0, alpha: 1)
-        let couleur = indexPath.row % 2 == 0 ? couleur1 : couleur2
+        let couleur = indice % 2 == 0 ? couleur1 : couleur2
         cellule.entete.backgroundColor = couleur
         
         return cellule
