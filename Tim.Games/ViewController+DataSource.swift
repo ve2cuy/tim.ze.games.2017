@@ -54,6 +54,7 @@ extension ViewController: UICollectionViewDataSource {
         // TODO: 5a - Renseigner les éléments d'interface de la cellule courante: titre, image, ...
         cellule.pochetteTitre.text = nomJeu
         // Obtenir l'image via le Web
+        /*  Remplacé par
         if let _url = URL(string: URLFichierImage) {
             do {
                 let _data = try Data(contentsOf: _url)
@@ -64,8 +65,16 @@ extension ViewController: UICollectionViewDataSource {
                 cellule.pochetteImage.image = UIImage(named:Globales.NA_IMAGE)
             }
         } // if let _url
+         ceci : */
+        cellule.pochetteImage.image = UIImage(named:Globales.LOADING_IMAGE)
+        // cellule.pochetteImage.image = uneImage
+        // Note: L'images est tellement lourde que même l'affichage est bloquant
+        // Solution: Utiliser des images plus petites pour cette section
         
-        // TODO: 5b - Renseigner les éléments d'interface en version non bloquante
+        self.obtenirImage(urlStr: URLFichierImage)
+        { uneImage in
+            cellule.pochetteImage.image = uneImage
+        }
         
         // Renseigner la couleur de l'entête indexPath.row modulo 2
         let couleur1 = UIColor.init(red: 140 / 255.0, green: 188 / 255.0, blue: 220 / 255.0, alpha: 1)
