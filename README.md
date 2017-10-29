@@ -10,5 +10,11 @@ Ordre d'exploration
 
 4 - UICollectionViewDispatch
 
-5 - SDWebImageDemo -> Fermer le projet et réouvrir via le fichier workspace
+5 - SDWebImageDemo -> Fermer le projet
+
+6 - via le terminal, cd vers dossier du projet
+
+7 - taper la commande:  pod install
+
+8 - ouvrire le projet en utilisant le fichier wcworkspace
 
