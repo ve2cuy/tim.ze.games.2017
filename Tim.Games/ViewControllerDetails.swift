@@ -54,7 +54,7 @@ class ViewControllerDetails: UIViewController, UICollectionViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let _detailsItemCourant = detailsItemCourant {
-            print(detailsItemCourant)
+            print(_detailsItemCourant)
             
             // TODO: 1 - Renseigner le tableau _listeDesSuivieux à partir des données reçues et afficher.
             // TODO: 2 - Renseigner les éléments d'interface: titre, pochettes, suiveux, ...
