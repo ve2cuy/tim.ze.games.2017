@@ -48,12 +48,12 @@ extension ViewController: UITextFieldDelegate {
          À compléter ....
          ********************************* */
         // TODO: Convertir la chaine en format 'escaped' pour le web. Par exemple, ' '= %20
-        // let escapedText = textField.text!.addingPercentEncoding(withAllowedCharacters: CharacterSet.alphanumerics)!
+        let escapedText = textField.text!.addingPercentEncoding(withAllowedCharacters: CharacterSet.alphanumerics)!
         
-        // print("escapedText = \(escapedText)")
+        print("escapedText = \(escapedText)")
         
         // TODO: Relancer la requete vers l'API
-        // obtenirDonnéesVersionBloquante(unFiltre: escapedText, données: donnéesAPITim)
+        obtenirDonnéesVersionBloquante(unFiltre: escapedText, données: donnéesAPITim)
         
         //----------------------------------
         textField.resignFirstResponder()
