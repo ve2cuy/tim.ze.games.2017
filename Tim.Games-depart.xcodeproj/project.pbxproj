@@ -21,6 +21,7 @@
 		B5762C651FA6010B004F5C78 /* ViewController+ObtenirDonnées.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5762C641FA6010B004F5C78 /* ViewController+ObtenirDonnées.swift */; };
 		B5762C671FA60BBC004F5C78 /* ViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5762C661FA60BBC004F5C78 /* ViewController+DataSource.swift */; };
 		B5762C6A1FA60C77004F5C78 /* ViewController+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5762C691FA60C77004F5C78 /* ViewController+TextFieldDelegate.swift */; };
+		B5762C6C1FA626E1004F5C78 /* ViewController+ObtenirImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5762C6B1FA626E1004F5C78 /* ViewController+ObtenirImage.swift */; };
 		B598859C1DBA9A6A00F3D104 /* String+parseJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598859B1DBA9A6A00F3D104 /* String+parseJSON.swift */; };
 		B598859E1DBAB29C00F3D104 /* DetailsSuiveux.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598859D1DBAB29C00F3D104 /* DetailsSuiveux.swift */; };
 		B59885A01DBB999000F3D104 /* p-20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B598859F1DBB999000F3D104 /* p-20.jpg */; };
@@ -57,6 +58,7 @@
 		B5762C641FA6010B004F5C78 /* ViewController+ObtenirDonnées.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ObtenirDonnées.swift"; sourceTree = "<group>"; };
 		B5762C661FA60BBC004F5C78 /* ViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+DataSource.swift"; sourceTree = "<group>"; };
 		B5762C691FA60C77004F5C78 /* ViewController+TextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+TextFieldDelegate.swift"; sourceTree = "<group>"; };
+		B5762C6B1FA626E1004F5C78 /* ViewController+ObtenirImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ObtenirImage.swift"; sourceTree = "<group>"; };
 		B598859B1DBA9A6A00F3D104 /* String+parseJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+parseJSON.swift"; sourceTree = "<group>"; };
 		B598859D1DBAB29C00F3D104 /* DetailsSuiveux.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsSuiveux.swift; sourceTree = "<group>"; };
 		B598859F1DBB999000F3D104 /* p-20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "p-20.jpg"; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				B5762C641FA6010B004F5C78 /* ViewController+ObtenirDonnées.swift */,
 				B5762C661FA60BBC004F5C78 /* ViewController+DataSource.swift */,
 				B5762C691FA60C77004F5C78 /* ViewController+TextFieldDelegate.swift */,
+				B5762C6B1FA626E1004F5C78 /* ViewController+ObtenirImage.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -228,7 +231,7 @@
 				TargetAttributes = {
 					B59C4F891D9B40E100293D72 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 842QT9U36M;
+						DevelopmentTeam = 2479QL33T8;
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
@@ -288,6 +291,7 @@
 			files = (
 				B5762C631FA5FD7B004F5C78 /* APITim.swift in Sources */,
 				B598859C1DBA9A6A00F3D104 /* String+parseJSON.swift in Sources */,
+				B5762C6C1FA626E1004F5C78 /* ViewController+ObtenirImage.swift in Sources */,
 				B525313E1DB79CAB009F1FCB /* Intro.swift in Sources */,
 				B52531421DB7AEB7009F1FCB /* CelluleAvatar.swift in Sources */,
 				B59C4FC31D9B443A00293D72 /* CollectionViewCellPerso1.swift in Sources */,
@@ -436,7 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 842QT9U36M;
+				DEVELOPMENT_TEAM = 2479QL33T8;
 				INFOPLIST_FILE = Tim.Games/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Intro-a--Xcode.Tim-Games";
@@ -450,7 +454,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 842QT9U36M;
+				DEVELOPMENT_TEAM = 2479QL33T8;
 				INFOPLIST_FILE = Tim.Games/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Intro-a--Xcode.Tim-Games";
