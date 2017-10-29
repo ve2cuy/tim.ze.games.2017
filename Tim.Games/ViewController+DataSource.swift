@@ -29,6 +29,7 @@
 //          DE VOTRE PROJET DE SESSION.  IL EST FOURNI À TITRE PÉDAGOGIQUE UNIQUEMENT.
 
 import UIKit
+import SDWebImage
 
 extension ViewController: UICollectionViewDataSource {
     // MARK:- Méthodes de UICollectionViewDataSource
@@ -51,30 +52,12 @@ extension ViewController: UICollectionViewDataSource {
         let URLFichierImage = "\(Globales.URLDonnées)\(nomFichierCouverture)"
         print(URLFichierImage)
 
-        // TODO: 5a - Renseigner les éléments d'interface de la cellule courante: titre, image, ...
         cellule.pochetteTitre.text = nomJeu
-        // Obtenir l'image via le Web
-        /*  Remplacé par
-        if let _url = URL(string: URLFichierImage) {
-            do {
-                let _data = try Data(contentsOf: _url)
-                cellule.pochetteImage.image = UIImage(data: _data)
-            }
-            catch  {
-                print("Ligne \(#line), \(error), ### Exception: Problème avec URL: \(URLFichierImage)")
-                cellule.pochetteImage.image = UIImage(named:Globales.NA_IMAGE)
-            }
-        } // if let _url
-         ceci : */
-        cellule.pochetteImage.image = UIImage(named:Globales.LOADING_IMAGE)
-        // cellule.pochetteImage.image = uneImage
-        // Note: L'images est tellement lourde que même l'affichage est bloquant
-        // Solution: Utiliser des images plus petites pour cette section
         
-        self.obtenirImage(urlStr: URLFichierImage)
-        { uneImage in
-            cellule.pochetteImage.image = uneImage
-        }
+        // ****************************
+        // Exemple d'utilisation de SDWebImage
+        // https://github.com/rs/SDWebImage
+        cellule.pochetteImage.sd_setImage(with: URL(string: URLFichierImage), placeholderImage: UIImage(named: Globales.LOADING_IMAGE))
         
         // Renseigner la couleur de l'entête indexPath.row modulo 2
         let couleur1 = UIColor.init(red: 140 / 255.0, green: 188 / 255.0, blue: 220 / 255.0, alpha: 1)

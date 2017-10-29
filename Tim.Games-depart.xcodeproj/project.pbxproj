@@ -40,9 +40,13 @@
 		B59C50401D9B836700293D72 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = B59C503E1D9B836700293D72 /* facebook.png */; };
 		B59C50411D9B836700293D72 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = B59C503F1D9B836700293D72 /* twitter.png */; };
 		B59C50431D9B867F00293D72 /* ViewControllerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C50421D9B867F00293D72 /* ViewControllerDetails.swift */; };
+		C1451A6F077794A624FB5167 /* Pods_Tim_Games_depart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DF1E3ACE87052BD2C7F47F /* Pods_Tim_Games_depart.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49DF1E3ACE87052BD2C7F47F /* Pods_Tim_Games_depart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tim_Games_depart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E6DE58613C0094D2061C6C0 /* Pods-Tim.Games-depart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tim.Games-depart.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tim.Games-depart/Pods-Tim.Games-depart.release.xcconfig"; sourceTree = "<group>"; };
+		AA3775D7EB57E6E188A720C0 /* Pods-Tim.Games-depart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tim.Games-depart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tim.Games-depart/Pods-Tim.Games-depart.debug.xcconfig"; sourceTree = "<group>"; };
 		B50BD92B1DB843270095C62B /* 1-star-rating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-star-rating.png"; sourceTree = "<group>"; };
 		B50BD92C1DB843270095C62B /* 2-star-rating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-star-rating.png"; sourceTree = "<group>"; };
 		B50BD92D1DB843270095C62B /* 3-star-rating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3-star-rating.png"; sourceTree = "<group>"; };
@@ -85,12 +89,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1451A6F077794A624FB5167 /* Pods_Tim_Games_depart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		82403EC2CD0A3C1D77E3DCCF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA3775D7EB57E6E188A720C0 /* Pods-Tim.Games-depart.debug.xcconfig */,
+				6E6DE58613C0094D2061C6C0 /* Pods-Tim.Games-depart.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B50BD92A1DB843270095C62B /* cotes */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +141,8 @@
 			children = (
 				B59C4F8C1D9B40E100293D72 /* Tim.Games */,
 				B59C4F8B1D9B40E100293D72 /* Products */,
+				82403EC2CD0A3C1D77E3DCCF /* Pods */,
+				C3A471EABE1EA25AE2785B45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -196,6 +212,14 @@
 			name = "Les classes";
 			sourceTree = "<group>";
 		};
+		C3A471EABE1EA25AE2785B45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49DF1E3ACE87052BD2C7F47F /* Pods_Tim_Games_depart.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B59C4F9C1D9B40E100293D72 /* Build configuration list for PBXNativeTarget "Tim.Games-depart" */;
 			buildPhases = (
+				6B9E8995094B871D5460A7E1 /* [CP] Check Pods Manifest.lock */,
 				B59C4F861D9B40E100293D72 /* Sources */,
 				B59C4F871D9B40E100293D72 /* Frameworks */,
 				B59C4F881D9B40E100293D72 /* Resources */,
+				3C485B7F6F71140F6E9458C0 /* [CP] Embed Pods Frameworks */,
+				96FFADF092E95B102974B96B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -280,6 +307,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C485B7F6F71140F6E9458C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tim.Games-depart/Pods-Tim.Games-depart-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tim.Games-depart/Pods-Tim.Games-depart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B9E8995094B871D5460A7E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tim.Games-depart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96FFADF092E95B102974B96B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tim.Games-depart/Pods-Tim.Games-depart-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B59C4F861D9B40E100293D72 /* Sources */ = {
@@ -434,6 +515,7 @@
 		};
 		B59C4F9D1D9B40E100293D72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA3775D7EB57E6E188A720C0 /* Pods-Tim.Games-depart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 842QT9U36M;
@@ -448,6 +530,7 @@
 		};
 		B59C4F9E1D9B40E100293D72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E6DE58613C0094D2061C6C0 /* Pods-Tim.Games-depart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 842QT9U36M;
