@@ -59,8 +59,10 @@ struct Resultat:Codable {
     var titre:String
     var annee:Int
     var pochettes:Pochettes
+    var description:String?
     var like_facebook:Int
     var like_twitter:Int
+    var suiveux: Array<Suiveux>
 } // Resultat
 
 // ==============================================
@@ -70,4 +72,10 @@ struct Pochettes:Codable {
     var couverture:String?
 } // Pochette
 
+struct Suiveux:Codable {
+    var nom: String?
+    var avatar: String?
+    var description:String?
+    
+}
 

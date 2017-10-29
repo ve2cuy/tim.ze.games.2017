@@ -32,7 +32,7 @@ import UIKit
 class ViewControllerDetails: UIViewController, UICollectionViewDataSource {
  
     // MARK: - Les propriétés de la classe
-    var detailsItemCourant:Dictionary<String, Any>?  // TODO
+    var detailsItemCourant:Resultat?  // TODO
     
     private var _listeDesSuivieux = Array<Dictionary<String, String>>() // TODO
 
@@ -58,6 +58,12 @@ class ViewControllerDetails: UIViewController, UICollectionViewDataSource {
             
             // TODO: 1 - Renseigner le tableau _listeDesSuivieux à partir des données reçues et afficher.
             // TODO: 2 - Renseigner les éléments d'interface: titre, pochettes, suiveux, ...
+            let nomFichierCouverture = _detailsItemCourant.pochettes.grande!
+            let URLFichierImage = "\(Globales.URLDonnées)\(nomFichierCouverture)"
+
+            pochetteGrosse.sd_setImage(with: URL(string: URLFichierImage), placeholderImage: UIImage(named: Globales.LOADING_IMAGE))
+            
+            
         } // if let _detailsItemCourant
     } // viewDidLoad()
 
